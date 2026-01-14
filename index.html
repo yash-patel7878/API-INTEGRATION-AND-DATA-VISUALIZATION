@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Weather Monitoring Dashboard</h1>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter City Name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <h2 id="cityName">City Name</h2>
+            <p id="temp">Temperature: --°C</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="condition">Condition: --</p>
+        </div>
+
+        <h2>5-Day Forecast</h2>
+        <div class="forecast" id="forecastBox"></div>
+
+    </div>
+    <h2>Temperature Forecast Graph</h2>
+<canvas id="tempChart"></canvas>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
